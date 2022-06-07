@@ -1,0 +1,26 @@
+@url = http://localhost:3001/OTPVerify
+@json = Content-Type: application/json
+
+### 检查
+post {{url}}/ET_CheckPwdz201
+{{json}}
+
+{
+    "seed": "ll36F5F99043676226FA1E7526EF3CDF587D2C6E5E322B11EF",
+    "sOTP": "674687",
+    "iDrift": 0,
+    "lSucc": 0
+}
+
+
+### 同步
+post {{url}}/ET_Syncz201
+{{json}}
+
+{
+    "seed": "ll36F5F99043676226FA1E7526EF3CDF587D2C6E5E322B11EF",
+    "sOTP1": "674687",
+    "sOTP2": "718724",
+    "iDrift": 0,
+    "lSucc": 0
+}
